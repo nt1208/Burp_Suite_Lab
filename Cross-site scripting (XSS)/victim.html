@@ -1,0 +1,20 @@
+<!-- victim.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Victim Page</title>
+</head>
+<body>
+  <h1>Victim Page</h1>
+  <p>Hash content will be written below:</p>
+
+  <div id="output"></div>
+
+  <script>
+    // Cảnh báo: lỗi bảo mật
+    const hashContent = decodeURIComponent(location.hash.slice(1));
+    document.getElementById("output").innerHTML = hashContent;
+  </script>
+</body>
+</html>
